@@ -1,0 +1,62 @@
+{
+	"name": "directus-extension-alt-text-generator",
+	"description": "Generate SEO-friendly alt text for the images in your Directus file library, one at a time or in bulk.",
+	"icon": "image",
+	"version": "1.0.0",
+	"keywords": [
+		"directus",
+		"directus-extension",
+		"directus-extension-bundle",
+		"directus-custom-module",
+		"directus-custom-interface",
+		"alt-text",
+		"accessibility",
+		"seo",
+		"ai",
+		"images"
+	],
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"directus:extension": {
+		"type": "bundle",
+		"path": {
+			"app": "dist/app.js",
+			"api": "dist/api.js"
+		},
+		"entries": [
+			{
+				"type": "module",
+				"name": "alt-text-generator",
+				"source": "src/module/index.js"
+			},
+			{
+				"type": "interface",
+				"name": "generate-alt-text-button",
+				"source": "src/interface/index.js"
+			}
+		],
+		"host": "^11.0.0"
+	},
+	"scripts": {
+		"build": "directus-extension build",
+		"dev": "directus-extension build -w --no-minify",
+		"link": "directus-extension link",
+		"validate": "directus-extension validate"
+	},
+	"devDependencies": {
+		"@directus/extensions-sdk": "18.1.0",
+		"vue": "^3.5.44"
+	},
+	"license": "MIT",
+	"author": "Bryam Loaiza <balt1794@gmail.com>",
+	"homepage": "https://github.com/balt1794/directus-extension-alt-text-generator#readme",
+	"bugs": {
+		"url": "https://github.com/balt1794/directus-extension-alt-text-generator/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/balt1794/directus-extension-alt-text-generator.git"
+	}
+}
