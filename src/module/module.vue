@@ -433,8 +433,8 @@ small {
 	gap: 16px;
 }
 .text :deep(textarea) {
-	min-height: 52px;
-	height: 52px;
+	min-height: 76px;
+	height: 76px;
 	resize: vertical;
 }
 .text :deep(.v-textarea) {
@@ -445,9 +445,9 @@ code {
 	font-family: var(--theme--fonts--monospace--font-family);
 }
 .logo {
-	width: 44px;
-	height: 44px;
-	border-radius: 10px;
+	width: 32px;
+	height: 32px;
+	border-radius: 8px;
 	margin-right: 12px;
 }
 .row.single {
